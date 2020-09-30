@@ -1,0 +1,45 @@
+.switcher {
+  position: relative;
+  width: 75px; 
+  height: 36px;
+  border-radius: 5px;
+  background: transparent; 
+  border: 2px white solid;
+  margin-left: 20px;
+  cursor: pointer;
+  transition-duration: 500ms;
+
+  &::before {
+    position: relative;
+    content: "°C";
+    top: 7px;
+    left: 45px;
+    color: $main-color;
+    font-weight: 700;
+  }
+
+  &::after {
+    content: "";
+    height: 32px;
+    width: 32px; 
+    border-radius: 5px;
+    background: $main-color;
+    top: 2px; 
+    left: 2px;
+    transition-duration: 500ms;
+    position: absolute;
+  }
+}
+
+.switcher_on {
+  background: transparent;
+
+  &::before {
+    content: "°F";
+    left: 11px;
+  }
+
+  &::after {
+    left: 41px;
+  }
+}

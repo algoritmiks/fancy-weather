@@ -1,0 +1,13 @@
+.weather-future-wrapper {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .weather-future-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .weather-wrapper {
+    display: contents;
+  }
+}

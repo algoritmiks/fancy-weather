@@ -1,0 +1,45 @@
+.city, .country {
+  color: $main-color;
+  font-size: 40px;
+}
+
+.temperature {
+  color: $main-color;
+  font-size: 150px;
+}
+
+.weather-today {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.weather-icon-today {
+  width: 120px;
+  height: 120px;
+}
+
+.weather {
+  display: flex;
+  color: $main-color;
+}
+
+@media (max-width: 425px) {
+  .city, .country {
+    text-align: center;
+  }
+  .weather {
+    flex-wrap: wrap;
+    max-width: 375px;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .weather-today {
+    max-width: 375px;
+  }
+
+  .weather-details_item {
+    text-align: center;
+  }
+}

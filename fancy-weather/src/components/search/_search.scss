@@ -1,0 +1,37 @@
+.search-wrapper {
+  display: flex; 
+}
+
+.search {
+  background-color: transparent;
+  color: #fff;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 2px white solid;
+  outline: none;
+  font-weight: 700;
+}
+
+.search-button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px $main-color solid;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  color: $main-color;
+  cursor: pointer;
+  margin-left: 3px;
+  &:hover {
+    background-color: $color-button-hover;
+  }
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.search::placeholder{
+  color: rgb(235, 235, 235);
+}

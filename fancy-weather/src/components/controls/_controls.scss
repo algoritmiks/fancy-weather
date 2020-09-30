@@ -1,0 +1,68 @@
+.controls {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.update-button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px white solid;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-button-hover;
+  }
+}
+
+.spinner {
+  transform: rotate(90deg);
+}
+
+.spinner-animation {
+  animation: spin 1.5s ease-in-out;
+}
+
+.language-selector {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px $main-color solid;
+  outline: none;
+  color: $main-color;
+  font-weight: 700;
+  height: 40px;
+  width: 50px;
+  margin-left: 20px;
+
+  &:hover {
+    background-color: $color-button-hover;
+  }
+}
+
+option {
+  background-color: #333;
+}
+
+
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+
+@media (max-width: 470px) {
+  .search{
+    margin-left: 0 !important;
+  }
+}

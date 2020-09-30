@@ -1,0 +1,36 @@
+.root {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1000px;
+  height: fit-content;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  // flex-wrap: wrap;
+  height: 100px;
+}
+
+.weather-map-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+  .weather-map-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    justify-content: center;
+  }
+}

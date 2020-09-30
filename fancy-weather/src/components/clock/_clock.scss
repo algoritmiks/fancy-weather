@@ -1,0 +1,11 @@
+.clock {
+  color: $main-color;
+}
+
+
+@media (max-width: 425px) {
+  .clock_date, .clock_day {
+    text-align: center;
+  }
+
+}
